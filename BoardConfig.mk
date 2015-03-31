@@ -65,6 +65,6 @@ MR_FSTAB := device/lge/d851/twrp.fstab
 MR_KEXEC_MEM_MIN := 0x20000000
 MR_KEXEC_DTB := true
 MR_USE_MROM_FSTAB := true
-MR_DPI_FONT := 350
+MR_DPI_FONT := 230
 
 
