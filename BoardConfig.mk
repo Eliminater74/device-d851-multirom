@@ -55,7 +55,7 @@ RECOVERY_SDCARD_ON_DATA := true
 BOARD_HAS_NO_REAL_SDCARD := true
 TW_BRIGHTNESS_PATH := "/sys/devices/mdp.0/qcom\x2cmdss_fb_primary.175/leds/lcd-backlight/brightness"
 TW_MAX_BRIGHTNESS := 255
-TW_NO_SCREEN_TIMEOUT := false
+# TW_NO_SCREEN_TIMEOUT := false
 
 # MultiROM
 MR_INPUT_TYPE := type_b
