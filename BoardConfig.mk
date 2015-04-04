@@ -55,18 +55,20 @@ RECOVERY_SDCARD_ON_DATA := true
 BOARD_HAS_NO_REAL_SDCARD := true
 TW_BRIGHTNESS_PATH := "/sys/devices/mdp.0/qcom\x2cmdss_fb_primary.175/leds/lcd-backlight/brightness"
 TW_MAX_BRIGHTNESS := 255
+TW_SCREEN_BLANK_ON_BOOT := true
 # TW_NO_SCREEN_TIMEOUT := false
 
 # MultiROM
 MR_INPUT_TYPE := type_b
 MR_INIT_DEVICES := device/lge/d851/mr_init_devices.c
-MR_RD_ADDR := 0x2600000
+MR_RD_ADDR := 0x2200000
 MR_DPI := xhdpi
-# MR_DPI_MUL := 1
+MR_DPI_MUL := 1.5
 MR_FSTAB := device/lge/d851/twrp.fstab
-MR_KEXEC_MEM_MIN := 0x24000000
+MR_KEXEC_MEM_MIN := 0x21000000
 MR_KEXEC_DTB := true
 MR_USE_MROM_FSTAB := true
-MR_DPI_FONT := 430
-
+MR_DPI_FONT := 420
+MR_DEFAULT_BRIGHTNESS := 60
+#MR_CONTINUOUS_FB_UPDATE := true
 
