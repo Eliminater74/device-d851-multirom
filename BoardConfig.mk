@@ -65,10 +65,14 @@ MR_RD_ADDR := 0x2200000
 MR_DPI := xhdpi
 MR_DPI_MUL := 1.5
 MR_FSTAB := device/lge/d851/twrp.fstab
-MR_KEXEC_MEM_MIN := 0x20000000
+MR_KEXEC_MEM_MIN := 0x00005000
 MR_KEXEC_DTB := true
 MR_USE_MROM_FSTAB := true
 MR_DPI_FONT := 420
 MR_DEFAULT_BRIGHTNESS := 60
 #MR_CONTINUOUS_FB_UPDATE := true
+
+#MultiRom Hooks, So that we can run stock roms as secondary
+MR_DEVICE_HOOKS := device/lge/d851/mr_hooks.c
+MR_DEVICE_HOOKS_VER := 4
 
