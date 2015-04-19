@@ -35,6 +35,15 @@ TARGET_PREBUILT_KERNEL := device/lge/d851/kernel
 # use this instead
 # BOARD_KERNEL_IMAGE_NAME := zImage-dtb
 
+# Kernel & ToolChains
+#TARGET_KERNEL_CONFIG := cyanogenmod_d851_defconfig
+TARGET_KERNEL_CUSTOM_TOOLCHAIN := arm-linux-eabi-SM-4.9
+#TARGET_KERNEL_CROSS_COMPILE_PREFIX := prebuilts/gcc/linux-x86/arm/arm-linux-gnueabi-4.9/bin/arm-eabi-
+# Rom ToolChains
+TARGET_ROM_CUSTOM_TOOLCHAIN := arm-linux-androideabi-4.8
+#TARGET_GCC_VERSION := 4.8
+#TARGET_TOOLS_PREFIX := prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8/bin/arm-linux-androideabi-
+
 BOARD_BOOTIMAGE_PARTITION_SIZE := 16777216
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 16777216
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 2692743168
